@@ -1,12 +1,30 @@
 /// Main Styles File
 /// Here we import all the global Styles files we need for our project.
 
-@import "styles/normalize.scss";
-@import "styles/root.scss";
-@import "styles/fonts.scss";
+@import 'styles/normalize.scss';
+@import 'styles/root.scss';
+@import 'styles/fonts.scss';
+@import 'styles/mixins.scss';
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+div,
+p,
+a,
+span,
+li {
+  font-size: 18px;
 }
 
 img {

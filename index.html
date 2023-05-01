@@ -12,7 +12,41 @@
 
 <body>
   <div id="home-page">
-    Hello
+
+    <div class="card-preview">
+      <div class="card-preview__img-wrapper">
+        <picture>
+          <source srcset="/assets/images/card-preview/mobile-thumbnail.jpg"
+          media="(min-width: 480px)">
+          <img src="/assets/images/card-preview/desktop-thumbnail.jpg" alt="song thumbnail">
+        </picture>
+      </div>
+      <div class="card-preview__content-wrapper">
+        <div class="card-preview__content-innerwrapper">
+          <div class="card-preview__song-info">
+            <h3 class="card-preview__title">RiRi</h3>
+            <p class="card-preview__author">Young Thug</p>
+          </div>
+          <div class="card-preview__song-duration">
+            <img src="/assets/icons/clock-ico.png" alt="clock ico" width="20" height="20"/>
+            <span class="time">4:04</span>
+          </div>
+        </div>
+        <div class="card-preview__user-list">
+          <img src="/assets/images/user/user-ico.jpg" alt="user thumbnail" width="40" height="40" class="card-preview__user-thumbnail"/>
+          <div class="dot-separator"></div>
+          <p class="card-preview__user-name">Jeffery</p>
+          <div class="dot-separator"></div>
+          <p class="card-preview__user-list-date">2016</p>
+          <div class="dot-separator"></div>
+          <div class="card-preview__user-list-info">
+            <p>10 songs</p>,
+            <p> 42 min</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script type="module" src="/src/global-scripts/main.js"></script>
