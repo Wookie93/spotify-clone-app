@@ -1,0 +1,89 @@
+.card-preview {
+  padding: 16px;
+  background-color: var(--color-primary);
+  border-radius: var(--rounding-24);
+
+  & &__img-wrapper {
+    margin-bottom: 24px;
+
+    img {
+      border-radius: var(--rounding-16);
+      width: 311px;
+    }
+  }
+
+  & &__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+    margin-bottom: 18px;
+  }
+
+  & &__content-innerwrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  & &__title {
+    letter-spacing: -0.65px;
+    margin-bottom: 12px;
+  }
+
+  & &__song-duration {
+    display: flex;
+    gap: 8px;
+    img {
+      width: 20px;
+    }
+  }
+
+  & &__user-list {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  & &__user-list-innerwrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  & &__user-thumbnail {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 11px;
+  }
+
+  & &__user-list-info {
+    display: flex;
+    align-items: center;
+  }
+
+  @include tablet {
+    & &__img-wrapper {
+      img {
+        width: 381px;
+      }
+    }
+
+    & &__user-list {
+      p {
+        font-size: 18px;
+      }
+    }
+
+    & &__user-thumbnail {
+      margin-right: 15px;
+    }
+
+    & &__title {
+      margin-bottom: 13px;
+    }
+  }
+}
