@@ -3,10 +3,14 @@
 ///
 ///
 @import './card-preview.scss';
+@import './album-sections.scss';
 
 #home-page {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.card-preview-widget {
+  display: none;
 }

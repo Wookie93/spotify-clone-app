@@ -1,0 +1,279 @@
+.album-section {
+  @include smallScreens {
+    margin-left: -9px;
+  }
+
+  @include desktop {
+    margin-left: 0px;
+  }
+}
+.container {
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--rounding-24);
+
+  @include smallMobile {
+    max-width: 292px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include smallScreens {
+    padding: 24px;
+    border-radius: var(--rounding-32);
+  }
+
+  @include desktop {
+    max-width: 1136px;
+  }
+}
+
+.songs-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  margin-top: 32px;
+
+  & &__box,
+  & &__content,
+  & &__content-innerwrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & &__box {
+    padding: 16px;
+    background-color: var(--color-card-background);
+    border-radius: var(--rounding-16);
+    position: relative;
+    width: 311px;
+    height: 340px;
+  }
+
+  & &__image-wrap {
+    margin-bottom: 11px;
+
+    img {
+      width: 108px;
+      height: 108px;
+    }
+  }
+
+  & &__content {
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  & &__content-innerwrap {
+    gap: 12px;
+  }
+
+  & &__title {
+    letter-spacing: -0.1px;
+    line-height: 100%;
+    &.break {
+      width: 80%;
+    }
+  }
+
+  & &__short-desc {
+    width: 90%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.005em;
+    opacity: 0.5;
+  }
+
+  @include smallMobile {
+    align-items: center;
+
+    & &__box {
+      width: 260px;
+      height: 360px;
+    }
+  }
+
+  @include smallScreens {
+    width: 100%;
+    gap: 15px;
+    margin-top: 42px;
+    margin-bottom: 14px;
+
+    & &__box {
+      width: 722px;
+      height: 228px;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 24px;
+      padding: 24px;
+      border-radius: var(--rounding-24);
+    }
+
+    & &__content-innerwrap {
+      gap: 12px;
+    }
+
+    & &__title {
+      margin-bottom: 4px;
+      &.break {
+        width: 65%;
+        line-height: 100%;
+        margin-bottom: 3px;
+        letter-spacing: -0.1px;
+      }
+    }
+
+    & &__short-desc {
+      width: 100%;
+      height: 66px;
+      font-size: 16px;
+      max-width: 405px;
+      letter-spacing: -0.1px;
+    }
+
+    & &__image-wrap {
+      margin-bottom: 0;
+    }
+
+    .button {
+      position: absolute;
+      bottom: 24px;
+    }
+  }
+
+  @include desktop {
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 70px;
+    margin-bottom: 21px;
+
+    & &__box {
+      width: 352px;
+      height: 422px;
+      flex-direction: column;
+      gap: 19px;
+      padding: 24px;
+    }
+
+    & &__content {
+      padding-bottom: 8px;
+    }
+
+    & &__content-innerwrap {
+      gap: 17px;
+    }
+
+    & &__short-desc {
+      letter-spacing: -0.12px;
+    }
+
+    & &__image-wrap {
+      margin-bottom: 0;
+
+      img {
+        width: 140px;
+        height: 140px;
+      }
+    }
+
+    & &__title {
+      height: 48px;
+      width: 80%;
+      letter-spacing: -0.35px;
+      line-height: 100%;
+      margin-bottom: -1px;
+      &.break {
+        margin-bottom: -1px;
+      }
+    }
+    .button {
+      position: absolute;
+      bottom: 33px;
+    }
+  }
+}
+
+.adventage-box {
+  & &__innerwrap {
+    position: relative;
+    width: 311px;
+
+    .button {
+      position: absolute;
+      bottom: 45px;
+      left: 16px;
+    }
+  }
+
+  @include smallMobile {
+    & &__innerwrap {
+      width: 260px;
+    }
+  }
+
+  @include smallScreens {
+    & &__innerwrap {
+      width: 722px;
+      height: 128px;
+
+      .button {
+        left: 525px;
+        bottom: 40px;
+      }
+    }
+  }
+
+  @include desktop {
+    max-height: 176px;
+
+    & &__innerwrap {
+      width: 1088px;
+
+      .button {
+        left: 891px;
+      }
+    }
+  }
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 23px;
+  gap: 8px;
+  width: 165px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 200px;
+  letter-spacing: -0.01em;
+
+  &__primary {
+    background-color: var(--color-primary-green);
+    color: var(--color-black);
+  }
+
+  &__secondary {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  img {
+    width: 12px;
+  }
+
+  @include smallScreens {
+    padding: 16px 24px;
+    letter-spacing: -0.26px;
+  }
+
+  @include desktop {
+    letter-spacing: -0.016em;
+  }
+}
