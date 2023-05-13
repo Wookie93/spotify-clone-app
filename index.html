@@ -12,112 +12,48 @@
 
 <body>
   <div id="home-page">
-
-    <div class="album-section">
-      <div class="container songs-preview">
-        <div class="songs-preview__box">
-          <div class="songs-preview__image-wrap">
-              <img src="/assets/images/album-section/mobile/damn-thumbnail-mobile.png" alt="song thumbanail">
-
+    <div class="checkout-card-component">
+      <div class="checkout-card-component__top">
+        <h2 class="checkout-card-component__title">Order summary</h2>
+        <p class="checkout-card-component__desc">Check if your order matches</p>
+      </div>
+      <div class="checkout-card-component__basket-list">
+        <div class="checkout-card-component__basket-item">
+          <div class="image-wrap">
+            <img src="/assets/images/basket/product-thumbnail.png" alt="product imagw" width="80" height="80"/>
           </div>
-          <div class="songs-preview__content">
-            <div class="songs-preview__content-innerwrap">
-              <h3 class="songs-preview__title break">Kendrick Lamar - DAMN</h3>
-              <p class="songs-preview__short-desc">Fourth studio album by American rapper Kendrick Lamar.</p>
-            </div>
-            <button class="button button__primary">
-              <img src="/assets/icons/play-button.png" alt="btn ico" width="11" height="12"/>
-              Start listening
-            </button>
+          <div class="product-info">
+            <p class="product-name">Individual</p>
+            <p class="product-details">1 account</p>
           </div>
-        </div>
-
-        <div class="songs-preview__box">
-          <div class="songs-preview__image-wrap">
-              <img src="/assets/images/album-section/mobile/faith-thumbnail-mobile.png" alt="song thumbanail">
-          </div>
-          <div class="songs-preview__content">
-            <div class="songs-preview__content-innerwrap">
-              <h3 class="songs-preview__title">Faith - Pop Smoke</h3>
-              <p class="songs-preview__short-desc">Faith is the second and final studio album by American rapper Pop Smoke. It was released posthumously on July 16, 2021.</p>
-            </div>
-            <button class="button button__primary">
-              <img src="/assets/icons/play-button.png" alt="btn ico" width="11" height="12"/>
-              Start listening
-            </button>
-          </div>
-        </div>
-
-        <div class="songs-preview__box">
-          <div class="songs-preview__image-wrap">
-              <img src="/assets/images/album-section/mobile/travis-scott-thumbnail-mobile.png" alt="song thumbanail">
-          </div>
-          <div class="songs-preview__content">
-            <div class="songs-preview__content-innerwrap">
-              <h3 class="songs-preview__title">Travis  Scott - Astroworld</h3>
-              <p class="songs-preview__short-desc">Third studio album by American rapper Travis Scott. It was released on August 3, 2018 through Cactus Jack Records...</p>
-            </div>
-            <button class="button button__primary">
-              <img src="/assets/icons/play-button.png" alt="btn ico" width="11" height="12"/>
-              Start listening
-            </button>
-          </div>
+            <p class="checkout-card-component__price-wrap">
+              <span class="product-price">$10.00</span>
+              <span class="unit">/month</span>
+            </p>
         </div>
       </div>
-      <div class="container adventage-box">
-        <div class="adventage-box__innerwrap">
-          <picture>
-            <source srcset="/assets/images/album-section/mobile/adv-box-mobile.png"
-            media="(max-width: 768px)">
-            <source srcset="/assets/images/album-section/tablet/adv-box-tablet.png"
-            media="(max-width: 1024px)">
-            <img src="/assets/images/album-section/desktop/adv-box-desktop.png" alt="adventage box">
-          </picture>
-          <button class="button button__secondary">
-            <img src="/assets/icons/play-button.png" alt="btn ico" width="11" height="12"/>
-            Start listening
-          </button>
+      <div class="checkout-card-component__summary">
+        <div class="checkout-card-component__product-summary">
+          <p class="product-summary-title">Product summary: </p>
+          <p class="checkout-card-component__price-wrap">
+            <span class="price">$10.00</span>
+            <span class="unit">/month</span>
+          </p>
         </div>
+        <div class="checkout-card-component__total">
+          <p class="total">Total:</p>
+          <p class="checkout-card-component__price-wrap">
+            <span class="total-price">$10.00</span>
+            <span class="unit">/month</span>
+          </p>
+        </div>
+      </div>
+      <div class="checkout-card-component__button-wrap">
+        <button class="button button__primary">Confirm and pay</button>
+        <button class="button button__secondary">Cancel order</button>
       </div>
     </div>
 
-    <div class="card-preview-widget">
-      <h3>Show card preview</h3>
-      <div class="card-preview">
-        <div class="card-preview__img-wrapper">
-          <picture>
-            <source srcset="/assets/images/card-preview/mobile-thumbnail.jpg"
-            media="(max-width: 480px)">
-            <img src="/assets/images/card-preview/desktop-thumbnail.jpg" alt="song thumbnail">
-          </picture>
-        </div>
-        <div class="card-preview__content-wrapper">
-          <div class="card-preview__content-innerwrapper">
-            <div class="card-preview__song-info">
-              <h3 class="card-preview__title">RiRi</h3>
-              <p class="card-preview__author">Young Thug</p>
-            </div>
-            <div class="card-preview__song-duration">
-              <img src="/assets/icons/clock-ico.png" alt="clock ico" width="20" height="20"/>
-              <span class="time">4:04</span>
-            </div>
-          </div>
-          <div class="line-separator"></div>
-          <div class="card-preview__user-list">
-            <img src="/assets/images/user/user-ico.jpg" alt="user thumbnail" width="40" height="40" class="card-preview__user-thumbnail"/>
-            <div class="card-preview__user-list-innerwrap">
-              <p class="card-preview__user-name">Jeffery</p>
-              <div class="dot-separator"></div>
-              <p class="card-preview__user-list-date">2016</p>
-              <div class="dot-separator"></div>
-              <div class="card-preview__user-list-info">
-                <p>10 songs, 42 min</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
   </div>
 

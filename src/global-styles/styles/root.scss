@@ -5,11 +5,34 @@
 :root {
   --color-primary: #9296c4;
   --color-primary-green: #65d46e;
-  --color-black: #000;
+  --color-primary-green-100: #d1f2d4;
+  --color-primary-green-200: #b2eab7;
+  --color-primary-green-300: #93e19a;
+  --color-primary-green-400: #7cda84;
+  --color-primary-green-500: #65d46e;
+  --color-primary-green-600: #5dcf66;
+  --color-primary-green-700: #53c95b;
+  --color-primary-green-800: #49c351;
+  --color-primary-green-900: #37b93f;
+  --color-content-500: #c9c9c9;
+  --color-background-0: #fff;
+  --color-background-500: #efefef;
+
   --color-background: #121212;
+  --color-background-light: var(--color-background-500);
+  --color-background-basket-card: var(--color-background-0);
+
   --color-card-background: #292929;
   --color-border: #343434;
   --color-white: #fff;
+  --color-black: #000;
+
+  --font-extra-small: 12px;
+  --font-small: 14px;
+  --font-medium: 16px;
+  --font-large: 18px;
+  --font-extra-large: 24px;
+  --font-heading: 32px;
 
   --rounding-16: 16px;
   --rounding-24: 24px;

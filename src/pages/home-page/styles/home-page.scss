@@ -2,15 +2,12 @@
 /// Here we import all the Styles files we need for our Homepage.
 ///
 ///
-@import './card-preview.scss';
-@import './album-sections.scss';
+
+@import '../components/checkout-card-component/checkout-card-component.scss';
 
 #home-page {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.card-preview-widget {
-  display: none;
 }
