@@ -1,6 +1,7 @@
 .checkout-card-component {
   display: flex;
   flex-direction: column;
+  max-width: 520px;
   width: 100vw;
   height: 100vh;
   padding: 40px 24px;
@@ -31,12 +32,13 @@
   }
 
   & &__top {
-    gap: 14px;
+    gap: 5px;
     margin-bottom: 46px;
   }
 
   & &__title {
     font-size: var(--font-heading);
+    letter-spacing: -0.26px;
   }
   & &__desc {
     font-size: var(--font-medium);
@@ -45,7 +47,7 @@
   & &__basket-list {
     flex-grow: 1;
     border-bottom: 1px solid var(--color-content-500);
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
 
   & &__basket-item {
@@ -54,16 +56,22 @@
 
     .image-wrap {
       width: 80px;
-      margin-right: 16px;
+      margin-right: 15px;
     }
 
     .product-info {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      margin-bottom: 3px;
+      gap: 6px;
+    }
+
+    .checkout-card-component__price-wrap{
+      margin-bottom: 30px;
     }
 
     .product-name {
+      letter-spacing: -0.1px;
       font-weight: 600;
     }
 
@@ -73,11 +81,13 @@
   }
 
   & &__summary {
-    gap: 24px;
+    gap: 22px;
     margin-bottom: 48px;
   }
 
   & &__product-summary {
+    align-items: baseline;
+
     .product-summary-title {
       font-size: var(--font-medium);
     }
@@ -92,6 +102,12 @@
 
   & &__price-wrap {
     margin-left: auto;
+
+    .price,
+    .product-price,
+    .total-price {
+      margin-right: 2px;
+    }
 
     .unit {
       font-size: var(--font-extra-small);
@@ -108,5 +124,53 @@
 
   & &__button-wrap {
     gap: 12px;
+  }
+
+  @include smallScreens{
+    max-height: 550px;
+    border-radius: var(--rounding-24);
+    padding: 40px;
+
+    & &__top{
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    & &__basket-item{
+      .checkout-card-component__price-wrap{
+        margin-bottom: 28px;
+      }
+
+      .product-info {
+        margin-bottom: 2px;
+      }
+    }
+
+    & &__summary{
+      gap: 23px;
+      margin-bottom: 47px;
+    }
+  }
+
+}
+
+
+.button {
+width: 100%;
+height: 54px;
+padding: 18px 0px;
+  border: none;
+  border-radius: 60px;
+  font-size: var( --font-medium);
+  font-weight: 700;
+
+  &__primary{
+    background-color: var(--color-primary-green-500);
+  }
+
+  &__secondary{
+    background-color: transparent;
+    border: 1px solid var(--color-content-500);
+    color: var(--color-content-500);
   }
 }

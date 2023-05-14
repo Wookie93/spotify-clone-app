@@ -8,11 +8,12 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: var(--color-background);
+  background-color: var(--color-background-500);
   color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 *,
