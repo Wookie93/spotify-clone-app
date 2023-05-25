@@ -1,0 +1,41 @@
+<div class="checkout-card-component">
+    <div class="checkout-card-component__top">
+      <h2 class="checkout-card-component__title">Order summary</h2>
+      <p class="checkout-card-component__desc">Check if your order matches</p>
+    </div>
+    <div class="checkout-card-component__basket-list">
+      <div class="checkout-card-component__basket-item" data-product-id="12345">
+        <div class="image-wrap">
+          <img src="/assets/images/basket/product-thumbnail.png" alt="product imagw" width="80" height="80"/>
+        </div>
+        <div class="product-info">
+          <p class="product-name">Individual</p>
+          <p class="product-details">1 account</p>
+        </div>
+          <p class="checkout-card-component__price-wrap">
+            <span class="product-price" data-product-price="10.00">$10.00</span>
+            <span class="unit">/month</span>
+          </p>
+      </div>
+    </div>
+    <div class="checkout-card-component__summary">
+      <div class="checkout-card-component__product-summary">
+        <p class="product-summary-title">Product summary: </p>
+        <p class="checkout-card-component__price-wrap">
+          <span class="price">$10.00</span>
+          <span class="unit">/month</span>
+        </p>
+      </div>
+      <div class="checkout-card-component__total">
+        <p class="total">Total:</p>
+        <p class="checkout-card-component__price-wrap">
+          <span class="total-price" data-basket-total-price="10.00">$10.00</span>
+          <span class="unit">/month</span>
+        </p>
+      </div>
+    </div>
+    <div class="checkout-card-component__button-wrap">
+      <button class="button button__primary" id="checkout-button" data-loading="0">Confirm and pay</button>
+      <button class="button button__secondary" id="cancel-button">Cancel order</button>
+    </div>
+  </div>
