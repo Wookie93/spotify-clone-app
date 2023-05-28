@@ -14,13 +14,18 @@
   --color-primary-green-700: #53c95b;
   --color-primary-green-800: #49c351;
   --color-primary-green-900: #37b93f;
+  --color-primary-green-hover: #53c95b;
   --color-content-500: #c9c9c9;
   --color-background-0: #fff;
-  --color-background-500: #efefef;
-  --color-background-600: #555555;
-  --color-background-700: #434343;
-  --color-background-800: #262626;
+  --color-background-400: #494949;
+  --color-background-500: #292929;
+  --color-background-600: #242424;
+  --color-background-700: #1f1f1f;
+  --color-background-800: #191919;
   --color-background-green-ligth: rgba(101, 212, 110, 0.08);
+  --color-gray-font: #949494;
+  --color-gray-light: #696969;
+  --color-disabled-font: var(--color-gray-light);
 
   --color-background: #121212;
   --color-background-light: var(--color-background-500);
