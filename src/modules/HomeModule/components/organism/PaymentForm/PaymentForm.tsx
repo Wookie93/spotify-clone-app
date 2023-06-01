@@ -155,15 +155,15 @@ export const PaymentForm = () => {
       <div className="img-container">
         <picture>
           <source
-            srcSet="src/public/images/product/product-mobile.png"
+            srcSet="./public/images/product/product-mobile.png"
             media="(max-width: 480px)"
           />
           <source
-            srcSet="src/public/images/product/product-tablet.png"
+            srcSet="./public/images/product/product-tablet.png"
             media="(max-width: 1024px)"
           />
           <img
-            src="src/public/images/product/product-desktop.png"
+            src="./public/images/product/product-desktop.png"
             alt="product"
           />
         </picture>
