@@ -1,0 +1,63 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import 'styles/normalize.scss';
+@import 'styles/root.scss';
+@import 'styles/fonts.scss';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: var(--font-medium);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  color: var(--on-background-color);
+  background-color: var(--canvas-color);
+}
+
+.img-container {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  &.img--cover {
+    object-fit: cover;
+  }
+}
+
+a {
+  color: var(--on-background-color);
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+h2 {
+  font-size: var(--font-extra-large);
+  font-weight: 700;
+  line-height: 100%;
+
+  @include smallScreens {
+    font-size: var(--font-heading);
+  }
+}

@@ -1,0 +1,34 @@
+.button {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 444px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &.button-primary {
+    background-color: var(--primary-color);
+    color: var(--color-black-900);
+    transition: background-color 0.3s linear;
+
+    &:hover {
+      background-color: var(--primary-color-dark);
+    }
+
+    &[disabled] {
+      background-color: var(--background-color-disabled);
+      color: var(--on-background-color-disabled);
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  @include smallScreens {
+    padding: 20px 40px;
+  }
+}

@@ -1,0 +1,119 @@
+.payment-form {
+  display: flex;
+  flex-direction: column;
+
+  & &__innerwrap {
+    order: 1;
+    padding: 37px 16px;
+  }
+
+  & &__title,
+  & &__input-wrap {
+    margin-bottom: 32px;
+  }
+
+  & &__title {
+    width: 137px;
+    letter-spacing: -0.15px;
+  }
+
+  & &__input-wrap,
+  & &__inner-input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  & &__inner-input-wrap {
+    gap: 14px;
+  }
+
+  @include mobile {
+    & &__inner-input-wrap {
+      flex-direction: row;
+
+      :first-child {
+        width: 209px;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  @include tablet {
+    align-items: center;
+
+    & &__innerwrap {
+      max-width: 440px;
+      padding: 116px 0 34px 0;
+    }
+
+    & &__title {
+      width: 227px;
+      margin: 0 auto 41px auto;
+      text-align: center;
+    }
+    & &__input-wrap {
+      margin-bottom: 30px;
+    }
+
+    & &__inner-input-wrap {
+      :first-child {
+        width: 261px;
+      }
+    }
+  }
+
+  @include desktop {
+    flex-direction: row;
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+
+    & &__innerwrap {
+      order: 0;
+      width: 100%;
+      max-width: 568px;
+      padding: 12px 50px 0 64px;
+    }
+  }
+
+  @include bigDesktop {
+    & &__innerwrap {
+      margin-bottom: 2px;
+      padding: 0 64px;
+    }
+    & &__title {
+      margin: 0 0 40px 0;
+      text-align: left;
+    }
+  }
+}
+
+.img-container {
+  margin: auto;
+  max-height: 372px;
+
+  @include tablet {
+    margin: unset;
+    max-height: unset;
+  }
+
+  @include smallScreens {
+    max-height: 574px;
+  }
+
+  @include desktop {
+    max-height: unset;
+    img {
+      width: 102%;
+      height: 810px;
+    }
+  }
+
+  @include veryBigDesktop {
+    img {
+      width: 872px;
+      height: 810px;
+    }
+  }
+}
